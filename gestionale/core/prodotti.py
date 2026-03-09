@@ -125,6 +125,7 @@ def _test_modulo():
 
     mylist = [p_a, p_b, myproduct1]
     mylist.sort(reverse=True)
+   # mylist.sort(key=lambda x: x.price, reverse=True)
 
     print("lista di prodotti ordinata")
     for p in mylist:

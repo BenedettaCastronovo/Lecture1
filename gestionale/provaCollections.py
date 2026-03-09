@@ -6,7 +6,7 @@ p1 = ProdottoRecord("Laptop", 1200.0)
 p2 = ProdottoRecord("Mouse", 20.0)
 p3 = ProdottoRecord("Auricolari", 250.0)
 
-carrello =[p1, p2, p3, ProdottoRecord("Tablet", 700.0)]
+carrello =[p1, p2, p3, ProdottoRecord("Tablet", 700.0)] #lista
 
 print("Prodotti nel carrello:")
 for i, p in enumerate(carrello):
@@ -26,7 +26,7 @@ print(f"Totale del carrello: {tot}")
 
 #Aggiungere
 carrello.append(ProdottoRecord("Propdo", 100.0))
-carrello.extend([ProdottoRecord("aaa", 100.0), ProdottoRecord("bbb", 100.0)])
+carrello.extend([ProdottoRecord("aaa", 100.0), ProdottoRecord("bbb", 100.0)]) #sto aggiungendo un'altra lista
 carrello.insert(2, ProdottoRecord("ccc", 100.0))
 
 #Rimuovere
@@ -36,7 +36,7 @@ carrello.remove(p1) #elimino la prima occorrenza di p1
 # carrello.clear() #svuoto la lista
 
 #Sorting
-# carrello.sort() #ordina seguendo ordinamento naturale -- questo non funziona se gli oggetti contenuti non definisco un metodo __lt__
+# carrello.sort() #ordina seguendo ordinamento naturale -- questo non funziona se gli oggetti contenuti non definiscono un metodo __lt__
 # carrello.sort(reverse=True) #ordina al contrario
 # carrello.sort(key = function)
 # carrello_ordinato = sorted(carrello)
