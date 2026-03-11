@@ -94,7 +94,9 @@ class ProdottoRecord:
     prezzo_unitario: float
 
     def __hash__(self):
-        return hash((self.name, self.prezzo_unitario))
+        return hash((self.name, self.prezzo_unitario)) #Serve a permettere agli oggetti della tua classe di essere
+        # usati in strutture dati basate su hash, cioè principalmente:
+        # set, chiavi di un dizionario (dict). Python usa l’hash per trovare gli oggetti molto velocemente.
 
     def __str__(self):
         return f"{self.name} -- {self.prezzo_unitario}"
