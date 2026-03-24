@@ -16,7 +16,7 @@ class Controller:
         except ValueError:
             self._view._lvOut.controls.append(
                 ft.Text("Attenzione! il prezzo deve essere un numero.",
-                        color="red")
+                        color = "red")
             )
             self._view.update_page()
             return
@@ -58,6 +58,8 @@ class Controller:
         )
 
         self._view.update_page()
+
+
 
     def gestisci_ordine(self, e):
         pass
