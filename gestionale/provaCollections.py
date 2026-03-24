@@ -128,7 +128,7 @@ s1.isdisjoint(s) # se gli elementi di s e quelli di s1 sono diversi
 
 #Dictionary
 catalogo = {
-    "LAP001": ProdottoRecord("Laptop", 1200), #è l'elemento prodotto
+    "LAP001": ProdottoRecord("Laptop", 1200),
     "LAP002": ProdottoRecord("Laptop Pro", 2300.0),
     "MAU001": ProdottoRecord("Mouse", 20.0),
     "AUR001": ProdottoRecord("Auricolari", 250.0)
@@ -164,7 +164,7 @@ for key, val in catalogo.items():
     print(f"Cod {key} è associata a: {val}")
 
 #rimuovere dal dizionario
-rimosso = catalogo.pop("LAP002") #pop restituisce l'elemento rimosso
+rimosso = catalogo.pop("LAP002")
 print(rimosso)
 
 #dict comprehesion
@@ -174,7 +174,7 @@ prezzi = {codice: prod.prezzo_unitario for codice,prod in catalogo.items()}
 # d[key] = v # scrivo sul dizionbario
 # v = d[key] # leggere -- restituisce key error se non esiste
 # v = d.get(key, default) # legge senza rischiare keyerror. Se non esiste rende il default
-# d.pop(key) # restituisce un valore e lo cancella dal diz
+# d.pop(key) # restiuisce un voalore e lo cancella dal diz
 # d.clear() # elimina tutto.
 # d.keys() # mi restituisce tutte le chiavi definite nel diz
 # d.values() # mi resituisce tutti i valori salvati nel diz
@@ -184,7 +184,7 @@ prezzi = {codice: prod.prezzo_unitario for codice,prod in catalogo.items()}
 """Esercizio live
 Per ciascuno dei seguenti casi, decidere quale struttura usare:"""
 
-"""1) Memorizzare un elenco di ordini che dovranno poi essere processati in ordine di arrivo"""
+"""1) Memorizzare una elenco di ordini che dovranno poi essere processati in ordine di arrivo"""
 # Collection? Lista
 
 ordini_da_processare = []
@@ -240,7 +240,7 @@ print("Distribuzione categorie clienti")
 print(categorie_counter)
 
 print("2 Categorie più frequent1")
-print(categorie_counter.most_common(2)) #le due più comuni
+print(categorie_counter.most_common(2))
 
 print("totale:")
 print(categorie_counter.total())
@@ -270,8 +270,8 @@ vendite_gennaio["Laptop"] += 4
 print(f"Vendite Gennaio: {vendite_gennaio}")
 
 # metodi da ricordare
-#c.most_common(n) #restituisce gli n elementi più frequenti
-#c.total() # somma dei conteggi
+c.most_common(n) #restituisce gli n elementi più frequenti
+c.total() # somma dei conteggi
 
 #Defaultdicts
 
