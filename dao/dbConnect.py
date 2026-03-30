@@ -37,6 +37,3 @@ class DBConnect:
         else:
             #allora il pool già esiste, e quindi restituisco direttamente la connessione
             return cls._myPool.get_connection()
-
-
-
